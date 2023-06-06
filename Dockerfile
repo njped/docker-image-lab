@@ -5,8 +5,9 @@ LABEL description="practicing on making a docker image"
 LABEL cohort="MTEC Cohort 16"
 LABEL animal="panda"
 
-COPY package.json ./
-COPY index.html ./
+WORKDIR /usr/src/app
+
+COPY . .
 
 EXPOSE 4040 
 
